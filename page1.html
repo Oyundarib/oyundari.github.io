@@ -55,37 +55,64 @@
   </div>
 </nav>
 
-<div id="band" class="container text-center">
-  <h3>THE BAND</h3>
-  <p><em>We love music!</em></p>
-  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <br>
-  <div class="row">
-  <div class="col-sm-4">
-        <img src="1.jpg" style="width: 100%;height: 180px">
-        <a href="">Jared Padalecki, Same Winchester болон Jensen Ackles, Dean Winchester дүрүүдэд тус тус тоголсон</a><br><br>
-        <a href="">Цувралд тэд чөтгөрүүд болон сүнс аганан аавыгаа хайн эхэлсэн</a><br><br>
 
+
+<div id="main" class="container">
+    <div id="zurag" class="col-sm-12">
+        <img src="1.jpg" name="slide" width="850" height="250">
+        <script type="text/javascript">
+            var step=1;
+            function slide()
+            {
+                document.images.slide.src=eval("image"+step+".src");
+                if(step<5)
+                {
+                    step++;
+                }
+                else step=1;
+                setTimeout("slide()", 2500);
+            }
+            slide();
+        </script>
     </div>
-    <div class="col-sm-4">
-        <img src="1.jpg" style="width: 100%;height: 180px">
-        <a href="">Warner Bros цувралт  дууны өнгө болон зөгнөлт хэсэгт хамтран ажилсан </a><br><br>
-        <a href="">Kripke, Robert дуучин, Fil Sgriccia, Sera Gamble, Jeremy Kervar, John Shiban, Ben Edlund Adam Shil хамтран ажилсан </a><br><br>
-
-
+    <div class="row">
+      <div id="samsung" class="col-sm-4">
+          <img src="1.jpg" width="290" height="130">
+      </div>
+      <div id="innovation" class="col-sm-4">
+          <img src="1.jpg" width="290" height="130">
+      </div>
+      <div id="dell" class="col-sm-4">
+          <img src="1.jpg" width="290" height="130">
+      </div>
     </div>
-    <div class="col-sm-4">
-    <img src="1.jpg" style="width: 100%;height: 180px">
-        <a href=""><p style="text-align: center">Legal Information | privacy policy | Copyright @Pedal Faster 2005</p></a>
+    <div class="row">
+      <div id="medee" class="col-sm-6">
+          <div id="garchig">
+              <h3 style=" color:black; margin-top:4px">Мэдээ мэдээлэл</h3>
+          </div>
+          <div id="medee1">
+              <div id="pyanz">
 
+                  <img src="1.jpg" height="100" width="120" style="float:left">
+                  <p >ПЯНЗНЫ ЭРИН ҮЕ ЭРГЭН ИРЖ БАЙНА.</p>
+                  <a href="#" style="color:darkblue; text-decoration:none" >Дэлгэрэнгүй</a>
+
+              </div>
+              <div id="santa">
+                  <img src="1.jpg" height="100" width="120" style="float:left">
+                  <p >Шинэ жилийн азын шоотой, бэлэгтэй худалдаа үргэлжилсээр байна.</p>
+                  <a href="#" style="color:green; text-decoration:none">Дэлгэрэнгүй</a>
+              </div>
+          </div>
+      </div>
+      <div id="youtube">
+          <iframe width="450" height="300" src="https://www.youtube.com/embed/GD-Ey3Hxy_o" frameborder="0" allowfullscreen>
+          </iframe>
+      </div>
     </div>
 </div>
-</div>
 
-
-
-
-<div id="googleMap"></div>
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -115,19 +142,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <!-- Footer -->
 <footer class="text-center">
+<div class="fb-page" data-href="https://www.facebook.com/anglihelsurtsgay/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/anglihelsurtsgay/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/anglihelsurtsgay/">Англи Хэл Сурцгаая</a></blockquote></div>
+
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
- 
-    <script type="text/javascript">
-        document.write ('<p style="color:lightgray; font-size:15px;">Цаг: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
-        if (document.getElementById) onload = function () {
-            setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
-        }
-    </script>
-    <div class="fb-page" data-href="https://www.facebook.com/anglihelsurtsgay/" data-tabs="timeline" data-width="200px" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/anglihelsurtsgay/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/anglihelsurtsgay/">Англи Хэл Сурцгаая</a></blockquote></div>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
 </footer>
-
 
 <script>
 $(document).ready(function(){
